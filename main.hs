@@ -1,3 +1,6 @@
 {-# OPTIONS -Wall #-}
 main :: IO ()
-main = putStrLn "Hello, World!"
+main = do
+ putStr "What's your name?"
+ name <- getLine
+ putStrLn $ "Hello, " ++ name ++ "!"
